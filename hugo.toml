@@ -1,4 +1,4 @@
-baseURL = 'https://cybertest.us/'
+baseURL = 'https://cybertest-us.github.io/cybertest.us/'
 languageCode = 'en-us'
 title = 'CyberTest.Us'
 theme = 'hugo-scroll'
