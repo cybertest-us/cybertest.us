@@ -1,0 +1,55 @@
+baseURL = 'https://cybertest.us/'
+languageCode = 'en-us'
+title = 'CyberTest.Us'
+theme = 'hugo-scroll'
+disableKinds = ["section", "taxonomy", "term", "RSS", "robotsTXT"]
+enableEmoji = true
+defaultContentLanguage = "en"
+publishDir = "docs"
+
+
+[params]
+    favicon = "images/favicon.png"
+    images = ["images/cover-image.jpg"]
+
+    # When set true, it creates a visual guard (partially transparent rounded box), preventing non-ideal background images from interfering with title/description headings
+    # Ideal images are homogenous around the centre and contrasting to the text.
+    # see CSS classes: .title-and-description-guard, .blog-title, .blog-description
+    # see _index.md header_headline and header_subheadline
+    title_guard = false
+
+    # See https://ogp.me/ and https://gohugo.io/templates/internal#open-graph.
+    title = "CyberTest.Us"
+    description = "Professional Cyber Security Penetration Testing Consulting Services"
+    copyright = "© CyberTest.Us"
+
+    hidedesignbyline = true
+
+    invertSectionColors = false
+    
+    image_options = "webp q90 lanczos photo"
+
+    combine_page_and_site_title = true
+    
+    [params.footer]
+    showContactIcons = false
+    showFooterLinks = false
+
+    [params.meta]
+        keywords = "pentesting, penetration test, hacking, cybersecurity, cyber, security, infosec, redteam, wireless"
+
+    [[params.contacts]]
+        label = "email"
+        value = "contactus@cybertest.us"
+        url = "mailto:contactus@cybertest.us"
+        icon = "fa fa-envelope"
+
+[languages]
+  [languages.en]
+    weight = 10
+    languageName = "English"
+    contentDir = "content/en"
+
+[caches]
+  [caches.images]
+    dir = ':cacheDir/images'
